@@ -1,2 +1,0 @@
-# angular-podstawy
-angular-podstawy
