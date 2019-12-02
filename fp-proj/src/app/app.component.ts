@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from './models/user';
 
 @Component({
   selector: 'fp-root',
@@ -7,6 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = { name: 2};
+  user: User = {
+    name: 'Alojzy',
+    age: 67
+  };
 
   handleClick(ev, inputValue) {
     console.log(ev, inputValue);
