@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { MyHomeComponent } from './my-home/my-home.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactDataComponent } from './contact-data/contact-data.component';
+import { VatPipe } from './vat.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ContactDataComponent } from './contact-data/contact-data.component';
     HomeComponent,
     MyHomeComponent,
     ContactComponent,
-    ContactDataComponent
+    ContactDataComponent,
+    VatPipe
   ],
   imports: [
     BrowserModule,

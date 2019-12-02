@@ -13,10 +13,10 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    setInterval(() => {
-      this.counter++;
-      this.homeOutput.emit(this.counter);
-    }, 2000);
+    // setInterval(() => {
+    //   this.counter++;
+    //   this.homeOutput.emit(this.counter);
+    // }, 2000);
   }
 
 }

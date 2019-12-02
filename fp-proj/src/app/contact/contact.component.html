@@ -1,3 +1,15 @@
 <p>contact works!</p>
-<pre>{{ contact | json }}</pre>
-<fp-contact-data [contact]="contact" (toUppercase)="handleToUppercase($event)"></fp-contact-data>
+<pre>{{ contacts | json }}</pre>
+<button (click)="toggle()">Toggle data</button>
+<ng-container *ngIf="showContactData">
+  <fp-contact-data *ngFor="let contact of contacts"
+  [contact]="contact"
+  (toUppercase)="handleToUppercase($event)">
+</fp-contact-data>
+<ul>
+  <li *ngFor="let contact of contacts;let i = index; let e = even; let o = odd"
+  [ngClass]="{isOdd: o}">
+    ({{i}}){{ contact.email}} - {{e ? 'is even': 'is odd'}} - {{contact.price | vat: 'CIT' }}
+  </li>
+</ul>
+</ng-container>
