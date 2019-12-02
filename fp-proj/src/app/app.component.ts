@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'fp-proj';
+  title = { name: 2};
+
+  handleClick(ev, inputValue) {
+    console.log(ev, inputValue);
+  }
+
+  handleHomeOutput(ev) {
+    console.log(ev);
+  }
 }
