@@ -1,0 +1,4 @@
+<div>{{product.name}} - {{product.price | currency: 'EUR' }}
+  <span *ngIf="showDescription">{{product.description}}</span>
+  <button (click)="showDescription = !showDescription">Toggle</button>
+  <button>Edit</button></div>
