@@ -1,5 +1,10 @@
 <div>
-  <a routerLink="/home">Home</a>
+  <a [routerLink]="['/home']">Home</a>
   <a routerLink="/contact">Contact</a>
   <a routerLink="/products">Products</a>
+</div>
+<div>
+  LoggedIn: {{userService.isLoggedIn$ | async}}
+  <button *ngIf="!(userService.isLoggedIn$ | async)" (click)="userService.logIn()">LogIn</button>
+  <button *ngIf="userService.isLoggedIn$ | async" (click)="userService.logOut()">LogOut</button>
 </div>
