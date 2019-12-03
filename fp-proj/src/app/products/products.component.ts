@@ -43,7 +43,7 @@ export class ProductsComponent implements OnInit {
       category: 'food',
       description: 'asaasd prod1 descr5'
     },
-  ]
+  ];
   constructor() { }
 
   ngOnInit() {

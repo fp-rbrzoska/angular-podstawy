@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Contact } from '../models/contact';
-import { VatPipe } from '../vat.pipe';
+import { Contact } from 'src/app/models/contact';
+import { VatPipe } from 'src/app/shared/vat.pipe';
 
 @Component({
   selector: 'fp-contact',
