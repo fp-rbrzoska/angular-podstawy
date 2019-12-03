@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Contact } from 'src/app/models/contact';
 import { VatPipe } from 'src/app/shared/vat.pipe';
+import { UserService } from 'src/app/core/user.service';
 
 @Component({
   selector: 'fp-contact',
@@ -20,7 +21,9 @@ export class ContactComponent implements OnInit {
   }];
 
   showContactData = false;
-  constructor() { }
+  constructor( private userService: UserService) {
+    console.log(userService.getUser());
+  }
 
   ngOnInit() {
     const pipe = new VatPipe();
