@@ -7,6 +7,7 @@ import { ContactComponent } from './main/contact/contact.component';
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+  // { path: 'lazy', loadChildren: () => import('./lazy/lazy.module').then( m => m.LazyModule )}
   { path: 'contact', component: ContactComponent }
 ];
 
