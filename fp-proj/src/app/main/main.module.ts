@@ -5,17 +5,24 @@ import { ContactDataComponent } from './contact-data/contact-data.component';
 import { HomeComponent } from './home/home.component';
 import { MyHomeComponent } from './my-home/my-home.component';
 import { SharedModule } from '../shared/shared.module';
+import { NavigationComponent } from './navigation/navigation.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     ContactComponent,
     ContactDataComponent,
     HomeComponent,
-    MyHomeComponent
+    MyHomeComponent,
+    NavigationComponent
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    RouterModule
+  ],
+  exports: [
+    NavigationComponent
   ]
 })
 export class MainModule { }
