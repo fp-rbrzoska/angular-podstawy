@@ -1,1 +1,8 @@
-<fp-products-list [products]="products"></fp-products-list>
+<a [routerLink]="['/products/add']">Add Product</a>
+<ng-container *ngIf="(products$ | async) as products; else loader">
+    <fp-products-list [products]="products"></fp-products-list>
+</ng-container>
+
+<ng-template #loader>
+<div>Loading......</div>
+</ng-template>

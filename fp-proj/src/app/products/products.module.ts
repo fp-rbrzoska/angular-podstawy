@@ -10,6 +10,7 @@ import { ProductsListComponent } from './products-list/products-list.component';
 import { ProductsItemComponent } from './products-item/products-item.component';
 import { ProductsService } from './products.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,9 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     CommonModule,
     ProductsRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [ ProductsService ]
 })

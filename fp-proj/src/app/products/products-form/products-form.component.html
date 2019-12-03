@@ -1,1 +1,12 @@
-<p>products-form works!</p>
+<form #myForm="ngForm" (submit)="handleSubmit(myForm)">
+    <div>Name: <input name="name" ngModel required></div>
+    <div>Email: <input name="email"ngModel email></div>
+    <button >Submit</button>
+</form>
+{{myForm.value | json}}
+<form [formGroup]="myReactiveForm"
+(submit)="handleSubmit(myReactiveForm)">
+    <div>Name: <input formControlName="name"></div>
+    <div>Email: <input formControlName="email"></div>
+    <button >Submit</button>
+</form>
