@@ -7,7 +7,7 @@ import { ContactComponent } from './main/contact/contact.component';
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  // { path: 'lazy', loadChildren: () => import('./lazy/lazy.module').then( m => m.LazyModule )}
+  { path: 'products', loadChildren: () => import('./products/products.module').then( m => m.ProductsModule )},
   { path: 'contact', component: ContactComponent }
 ];
 
