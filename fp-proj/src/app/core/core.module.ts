@@ -8,7 +8,7 @@ import { UserService } from './user.service';
     CommonModule
   ],
   providers: [
-    UserService
+    { provide: UserService, useClass: UserService }
   ]
 })
 export class CoreModule { }
