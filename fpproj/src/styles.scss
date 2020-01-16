@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
+$primary: pink;
+@import '~bootstrap/scss/bootstrap';
+
+h1 {
+  color: blue;
+}

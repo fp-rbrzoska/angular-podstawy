@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MyUser, ISuperComponent } from './models/my-user.interface'
+import { MyUser, ISuperComponent } from './models/my-user.interface';
 @Component({
   selector: 'fp-root',
   templateUrl: './app.component.html',
