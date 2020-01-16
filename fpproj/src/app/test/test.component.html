@@ -1,1 +1,6 @@
 <p>test works!</p>
+<div>{{ testVar | currency:'USD' }}</div>
+<button (click)="handleClick(myInput.value)" class="btn btn-danger">Click</button>
+<input #myInput (keyup)="handleClick(myInput.value)">
+<div>{{ myInput.value | uppercase }}</div>
+<div>{{ transform(myInput.value) }}</div>
