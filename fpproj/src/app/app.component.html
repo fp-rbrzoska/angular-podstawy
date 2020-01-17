@@ -3,6 +3,11 @@
     <div class="nav navbar-nav">
         <a class="nav-item nav-link" routerLink="/" routerLinkActive="active">Home</a>
         <a class="nav-item nav-link" routerLink="/test">Test</a>
+        <a class="nav-item nav-link" routerLink="/news">News</a>
+    </div>
+    <div>
+      <button class="btn btn-outline-primary"
+      (click)="loginActionHandler()">{{ (isLoggedIn$ | async) ? 'Log Out' : 'Log In' }}</button>
     </div>
 </nav>
 <router-outlet></router-outlet>

@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { TestModule } from './test/test.module';
 import { HomeComponent } from './home/home.component';
 import { CustomPipe } from './custom.pipe';
+import { CoreModule } from './core/core.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { CustomPipe } from './custom.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TestModule
+    HttpClientModule,
+    TestModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
