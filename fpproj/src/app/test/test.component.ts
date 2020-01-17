@@ -23,7 +23,7 @@ export class TestComponent implements OnInit {
   }
 
   incrementHandler(data: number) {
-    console.log('from output', data);
+    // console.log('from output', data);
   }
 
 }
