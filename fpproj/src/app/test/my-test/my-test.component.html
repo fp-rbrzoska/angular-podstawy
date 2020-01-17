@@ -1,1 +1,14 @@
-<p>testVar from parent: {{inputData}}</p>
+<p [ngStyle]="{'color': inputData%2 === 0 ? 'red': 'blue'}">testVar from parent: {{inputData}}</p>
+
+<div *ngIf="inputData%2 === 0; else nieparzyste">Test element1</div>
+
+<ng-template #nieparzyste>
+Uwaga nieparzyste!
+</ng-template>
+
+<ul>
+  <li [ngClass]="{'highlight': odd}"
+  *ngFor="let item of iterableData; let i = index, let odd = odd">{{item}} ({{i}}) index is {{ odd ? 'odd' : 'even' }}</li>
+</ul>
+
+<code>{{testObj | json}}</code>
