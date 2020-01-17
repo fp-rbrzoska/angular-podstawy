@@ -4,3 +4,5 @@
 <input #myInput (keyup)="handleClick(myInput.value)">
 <div>{{ myInput.value | uppercase }}</div>
 <div>{{ transform(myInput.value) }}</div>
+
+<fp-my-test [inputData]="testVar" (increment)="incrementHandler($event)"></fp-my-test>

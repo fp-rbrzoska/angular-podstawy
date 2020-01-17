@@ -14,12 +14,16 @@ export class TestComponent implements OnInit {
   }
 
   handleClick(value: string) {
-    console.log(value)
+    console.log(value);
     this.testVar ++;
   }
 
   transform(val: string): string {
     return val.toUpperCase();
+  }
+
+  incrementHandler(data: number) {
+    console.log('from output', data);
   }
 
 }
